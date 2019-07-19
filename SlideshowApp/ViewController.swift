@@ -24,8 +24,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let img:UIImage = UIImage(named: images[imageIndex])!
-        slideShowImage.image=img
+        let gazou:UIImage = UIImage(named: images[imageIndex])!
+        slideShowImage.image=gazou
     }
 
     @IBAction func nextImage(_ sender: Any) {
@@ -36,8 +36,8 @@ class ViewController: UIViewController {
         } else if imageIndex < 3 {
             imageIndex -= 2
         }
-        let img:UIImage = UIImage(named: images[imageIndex])!
-        slideShowImage.image=img
+        let gazou:UIImage = UIImage(named: images[imageIndex])!
+        slideShowImage.image=gazou
     }
    
     @IBAction func backImage(_ sender: Any) {
@@ -46,8 +46,8 @@ class ViewController: UIViewController {
         } else {
             imageIndex -= 1
         }
-        let img:UIImage = UIImage(named: images[imageIndex])!
-        slideShowImage.image=img
+        let gazou:UIImage = UIImage(named: images[imageIndex])!
+        slideShowImage.image=gazou
     }
     
     @objc func updateTimer(_ timer: Timer) {
@@ -59,8 +59,8 @@ class ViewController: UIViewController {
         } else if imageIndex < 3 {
             imageIndex -= 2
         }
-        let img:UIImage = UIImage(named: images[imageIndex])!
-        slideShowImage.image=img
+        let gazou:UIImage = UIImage(named: images[imageIndex])!
+        slideShowImage.image=gazou
     }
     
     @IBAction func StartStop(_ sender: Any) {

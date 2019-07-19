@@ -16,8 +16,8 @@ class ImageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let img:UIImage = UIImage(named: images[gazouIndex])!
-        kakudaiView.image=img
+        let gazou:UIImage = UIImage(named: images[gazouIndex])!
+        kakudaiView.image=gazou
     }
     
 
