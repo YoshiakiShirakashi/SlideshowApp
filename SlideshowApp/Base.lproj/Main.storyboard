@@ -18,54 +18,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTj-np-xDB">
+                                <rect key="frame" x="247.66666666666663" y="479" width="31" height="30"/>
+                                <state key="normal" title="再生"/>
+                                <connections>
+                                    <action selector="StartStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yGj-Is-UMs"/>
+                                </connections>
+                            </button>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g9T-h0-nRs" userLabel="sGazou">
-                                <rect key="frame" x="92" y="157" width="191" height="198"/>
+                                <rect key="frame" x="114" y="196" width="147" height="275"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="u7J-4h-qV9" appends="YES" id="0yI-mR-KfK"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pxa-bv-cqq">
-                                <rect key="frame" x="73" y="391" width="31" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="31" id="lul-3b-yVB"/>
-                                </constraints>
-                                <state key="normal" title="進む"/>
-                                <connections>
-                                    <action selector="nextImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m6e-hf-doG"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAc-ex-ptu">
-                                <rect key="frame" x="145" y="391" width="37" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="37" id="EHx-44-FUe"/>
-                                </constraints>
+                                <rect key="frame" x="172" y="479" width="31" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <action selector="backImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="klU-SR-4g8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTj-np-xDB">
-                                <rect key="frame" x="198" y="391" width="122" height="30"/>
-                                <state key="normal" title="再生/停止"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pxa-bv-cqq">
+                                <rect key="frame" x="88" y="477" width="31" height="30"/>
+                                <state key="normal" title="進む"/>
                                 <connections>
-                                    <action selector="StartStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yGj-Is-UMs"/>
+                                    <action selector="nextImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m6e-hf-doG"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="dAc-ex-ptu" firstAttribute="leading" secondItem="Pxa-bv-cqq" secondAttribute="trailing" constant="41" id="KH8-1G-A58"/>
-                            <constraint firstItem="Pxa-bv-cqq" firstAttribute="baseline" secondItem="dAc-ex-ptu" secondAttribute="baseline" id="R9a-Bq-uoX"/>
-                            <constraint firstItem="g9T-h0-nRs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cLK-hp-hts"/>
-                            <constraint firstItem="g9T-h0-nRs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="113" id="eHM-zA-ygB"/>
-                            <constraint firstItem="g9T-h0-nRs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="jYW-8v-oRh"/>
-                            <constraint firstItem="Pxa-bv-cqq" firstAttribute="top" secondItem="g9T-h0-nRs" secondAttribute="bottom" constant="36" id="l9g-w2-x5k"/>
-                            <constraint firstItem="Pxa-bv-cqq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mz5-gT-3qa"/>
-                            <constraint firstItem="Pxa-bv-cqq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="plD-MI-y70"/>
-                            <constraint firstItem="dAc-ex-ptu" firstAttribute="baseline" secondItem="PTj-np-xDB" secondAttribute="baseline" id="q1p-iO-TUa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PTj-np-xDB" secondAttribute="trailing" constant="55" id="rPP-Zj-wsI"/>
-                            <constraint firstItem="PTj-np-xDB" firstAttribute="leading" secondItem="dAc-ex-ptu" secondAttribute="trailing" constant="16" id="rUe-ty-oJL"/>
+                            <constraint firstItem="dAc-ex-ptu" firstAttribute="leading" secondItem="Pxa-bv-cqq" secondAttribute="trailing" constant="53" id="1N8-uD-oEX"/>
+                            <constraint firstItem="PTj-np-xDB" firstAttribute="leading" secondItem="dAc-ex-ptu" secondAttribute="trailing" constant="44.5" id="41e-8W-0xc"/>
+                            <constraint firstItem="dAc-ex-ptu" firstAttribute="top" secondItem="g9T-h0-nRs" secondAttribute="bottom" constant="8" id="4ud-qI-hqm"/>
+                            <constraint firstItem="dAc-ex-ptu" firstAttribute="top" secondItem="g9T-h0-nRs" secondAttribute="bottom" constant="8" symbolic="YES" id="A1m-X4-jh6"/>
+                            <constraint firstItem="g9T-h0-nRs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ApU-DN-SjW"/>
+                            <constraint firstItem="g9T-h0-nRs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="152" id="Kqf-m4-Q0U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g9T-h0-nRs" secondAttribute="trailing" constant="114" id="Lj4-6z-sKJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dAc-ex-ptu" secondAttribute="bottom" constant="269" id="Sk8-w8-Kob"/>
+                            <constraint firstItem="g9T-h0-nRs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="WAO-Lv-KvI"/>
+                            <constraint firstItem="dAc-ex-ptu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bzb-Rz-hMK"/>
+                            <constraint firstItem="g9T-h0-nRs" firstAttribute="centerX" secondItem="dAc-ex-ptu" secondAttribute="centerX" id="cR8-vS-cED"/>
+                            <constraint firstItem="dAc-ex-ptu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eRT-pF-Fyy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PTj-np-xDB" secondAttribute="bottom" constant="269" id="gQF-Zd-fvo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pxa-bv-cqq" secondAttribute="bottom" constant="271" id="jFh-06-smm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -85,7 +82,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1040.625" y="-557.74647887323943"/>
+            <point key="canvasLocation" x="1036" y="-559.97001499250382"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="iGB-Qz-WEk">
