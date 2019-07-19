@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var slideShowImage: UIImageView!
     @IBOutlet weak var prevButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var saiseiteishiButton: UIButton!
     
     var imageIndex = 0
     // タイマー用の時間のための変数
@@ -68,6 +69,7 @@ class ViewController: UIViewController {
             self.timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
             prevButton.isEnabled = false
             backButton.isEnabled = false
+            saiseiteishiButton.setTitle("停止", for:UIControl.State.normal)
         } else {
             stopSlideShow()
         }
@@ -79,6 +81,7 @@ class ViewController: UIViewController {
         }
         prevButton.isEnabled = true
         backButton.isEnabled = true
+        saiseiteishiButton.setTitle("再生", for:UIControl.State.normal)
     }
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {

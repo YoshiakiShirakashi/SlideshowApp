@@ -72,6 +72,7 @@
                     <connections>
                         <outlet property="backButton" destination="dAc-ex-ptu" id="6QC-TF-eHm"/>
                         <outlet property="prevButton" destination="Pxa-bv-cqq" id="ITO-Wh-XuM"/>
+                        <outlet property="saiseiteishiButton" destination="PTj-np-xDB" id="lOW-Uv-e9I"/>
                         <outlet property="slideShowImage" destination="g9T-h0-nRs" id="m8u-RK-695"/>
                     </connections>
                 </viewController>
